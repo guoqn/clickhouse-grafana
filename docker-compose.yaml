@@ -100,7 +100,7 @@ services:
     command: |
       bash -xec "
         if [[ ! -f ./node_modules/@grafana/toolkit/bin/grafana-toolkit.js ]]; then npm install --production=false; fi && \
-        npm run build
+        npm run build:prod
       "
 
 volumes:
